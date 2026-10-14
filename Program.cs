@@ -20,7 +20,20 @@ class Program
                ...
                Total : 12 coffres inspectés.
             
-            BONUS : enregistrer l'ensemble du butin trouvé et l'afficher à la fin
+            BONUS 1 : permettre à l'utilisateur de choisir le nombre de wagons
+            BONUS 2 : enregistrer l'ensemble du butin trouvé et l'afficher à la fin
          */
+        int totalCarriages = 4;
+        int totalChestsPerCarriage = 3;
+
+        Console.WriteLine("Inspection des 4 wagons du train");
+        for (int i = 1; i <= totalCarriages; i++)
+        {
+            for (int j = 1; j <= totalChestsPerCarriage; j++)
+            {
+                Console.WriteLine("Wagon " + i + " - Coffre " + j + " inspecté");
+            }
+        }
+        Console.WriteLine("Total " + (totalCarriages * totalChestsPerCarriage) + " coffres inspectés");
     }
 }
